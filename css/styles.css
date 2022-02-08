@@ -12,10 +12,11 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
   font-weight: 100;
-  font-size: 16px;
+  font-size: 18px;
   /* Sets the font size to 16px */
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
+  text-align: center;
 }
 
 h1 {
@@ -25,18 +26,28 @@ h1 {
   color: #c59b10;
   line-height: 1.2;
 }
-
+.h1_dark {
+  font-weight: 400;
+  font-size: 50px;
+  color: #272523;
+  text-align: center;
+}
+.h1_light {
+  font-weight: 400;
+  font-size: 50px;
+  color: #c59b10;
+}
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 24px;
-  color: #ecb913;
+  color: #c59b10;
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 18;
   color: white;
 }
 a {
@@ -55,13 +66,13 @@ a:visited {
 
 a:active {
   /* selected link */
-  color: #c59b10;
+  color: #ecb913;
 }
-
+a.content_link {
+  text-decoration: underline;
+}
 div {
   padding: 30px; /* Adds a 30px inner spacing to all sides*/
-  margin: 30px; /* Adds a 30px outer spacing to all sides*/
-  /*border: 2px solid white; /* Attributes describe: thickness, type, color*/
   display: block;
   text-align: center;
 }
@@ -71,9 +82,19 @@ div {
   display: block;
   text-align: center;
 }
+.div_third {
+  width: 85%;
+  border-radius: 30px;
+  background-color: #c59b10;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
 .page-header {
-  width: 70%;
+  width: 60%;
   margin: 50px;
+  margin-bottom: 10px;
   margin-left: 70px;
   padding: 20px;
   text-align: left;
@@ -97,8 +118,8 @@ button {
   /* overwrites browser defaults and resets the border */
   border: none;
   /* takes the font from the outer container */
-  font: inherit;
-  font-size: 14px;
+  font-weight: 300;
+  font-size: 16px;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #c59b10;
   color: #272523;
@@ -120,4 +141,17 @@ button:focus {
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
+}
+.grid {
+  display: inline-flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item {
+  background-color: #272523;
+  box-sizing: border-box;
+  max-width: 400px;
+  font-size: 20px;
+  border-radius: 15px;
 }
