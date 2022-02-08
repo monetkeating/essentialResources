@@ -115,3 +115,4 @@ Our pets go through the ups and downs of life with us. Help us continue to show 
 essential resources for our pets who to many are considered family and all that remains when 
 hard times come for some people!
 
+git remote add origin git@github.com:monetkeating/essentialResources.git
