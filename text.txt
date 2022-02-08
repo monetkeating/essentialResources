@@ -116,3 +116,4 @@ essential resources for our pets who to many are considered family and all that 
 hard times come for some people!
 
 git remote add origin git@github.com:monetkeating/essentialResources.git
+git remote set-url origin https://github.com/monetkeating/essentialResources.git
