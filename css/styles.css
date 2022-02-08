@@ -1,0 +1,123 @@
+/* primary-yellow-light: #ecb913;
+    secondary-yellow-dark: #c59b10;
+    background-color: #272523;
+    font-dark: black;
+    font-light: white;
+    
+    font-family: 'Roboto', sans-serif;
+    */
+
+body {
+  background-color: #272523;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  color: #c59b10;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: #ecb913;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  /* underlining when hovering over a link */
+  text-decoration: underline;
+}
+a:visited {
+  /* visited link */
+  color: white;
+}
+
+a:active {
+  /* selected link */
+  color: #c59b10;
+}
+
+div {
+  padding: 30px; /* Adds a 30px inner spacing to all sides*/
+  margin: 30px; /* Adds a 30px outer spacing to all sides*/
+  /*border: 2px solid white; /* Attributes describe: thickness, type, color*/
+  display: block;
+  text-align: center;
+}
+.div_secondary {
+  width: 100%;
+  background-color: #c59b10;
+  display: block;
+  text-align: center;
+}
+.page-header {
+  width: 70%;
+  margin: 50px;
+  margin-left: 70px;
+  padding: 20px;
+  text-align: left;
+}
+/*.page-intro {
+  text-align: left;
+}*/
+.navigation-list {
+  list-style: none;
+  display: flex;
+  border: none;
+  justify-content: left;
+}
+li {
+  margin-right: 10px;
+}
+.page-footer {
+  clear: both;
+}
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font: inherit;
+  font-size: 14px;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #c59b10;
+  color: #272523;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  /*border: 2px solid black;*/
+}
+.button_secondary {
+  background-color: #272523;
+  color: #c59b10;
+  border: 2px solid #c59b10; /* Green */
+}
+button:hover,
+button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
