@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* primary-yellow-light: #ecb913;
     secondary-yellow-dark: #c59b10;
     background-color: #272523;
@@ -116,17 +123,23 @@ div {
   text-align: left;
 }
 /*.page-intro {
-  text-align: left;
-}*/
+        text-align: left;
+      }*/
 .navigation-list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: none;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
   justify-content: left;
 }
 .services-list {
   list-style: none;
   display: block;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
   justify-content: left;
   text-align: left;
 }
@@ -171,13 +184,17 @@ button:focus {
 
 /* index.html grid specifications*/
 .grid {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
 .grid__item {
   background-color: #272523;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 400px;
   font-size: 20px;
@@ -186,13 +203,17 @@ button:focus {
 
 /* Services.html grid specifications*/
 .grid_2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
 .grid_item_2 {
   background-color: #272523;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 400px;
   font-size: 20px;
@@ -200,7 +221,10 @@ button:focus {
 }
 
 .grid_3 {
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
   justify-content: left;
 }
 
